@@ -1,0 +1,840 @@
+{
+  "source": "Carta aportada por el usuario, cotejada visualmente el 27/10/2026.",
+  "currencySymbol": "$",
+  "groups": [
+    {
+      "id": "entradas",
+      "name": "Entradas",
+      "kind": "cocina",
+      "note": "",
+      "items": [
+        {
+          "name": "Papas Fritas simples",
+          "description": "",
+          "price": 11000
+        },
+        {
+          "name": "Papas Fritas gratinadas",
+          "description": "Con queso tybo.",
+          "price": 14000
+        },
+        {
+          "name": "Papas Fritas Los Troncos",
+          "description": "Cheddar, panceta y cebollita de verdeo.",
+          "price": 16000
+        },
+        {
+          "name": "Mandioca Frita",
+          "description": "",
+          "price": 10000
+        },
+        {
+          "name": "Bastones de Muzzarela",
+          "description": "",
+          "price": 15500
+        },
+        {
+          "name": "Ensalada César",
+          "description": "Hojas verdes, pechuga de pollo, parmesano, croutons y salsa César.",
+          "price": 13000
+        }
+      ]
+    },
+    {
+      "id": "picadas",
+      "name": "Picadas",
+      "kind": "cocina",
+      "note": "Milanesa, huevo relleno, empanaditas, jamón, snack de pollo y acelga, quesos, papas y mandiocas fritas, pancitos y salsas.",
+      "items": [
+        {
+          "name": "Picada para 2",
+          "description": "",
+          "price": 27000
+        },
+        {
+          "name": "Picada para 4",
+          "description": "",
+          "price": 39000
+        },
+        {
+          "name": "Picada para 6",
+          "description": "",
+          "price": 49000
+        }
+      ]
+    },
+    {
+      "id": "empanadas",
+      "name": "Empanadas",
+      "kind": "cocina",
+      "note": "",
+      "items": [
+        {
+          "name": "Jamón y Queso",
+          "description": "",
+          "price": 1800
+        },
+        {
+          "name": "Carne Molida",
+          "description": "",
+          "price": 1800
+        },
+        {
+          "name": "Cebolla y Queso",
+          "description": "",
+          "price": 1800
+        },
+        {
+          "name": "Pollo",
+          "description": "",
+          "price": 1800
+        },
+        {
+          "name": "Verdura",
+          "description": "",
+          "price": 1800
+        },
+        {
+          "name": "Humita",
+          "description": "",
+          "price": 1800
+        },
+        {
+          "name": "Capresse",
+          "description": "",
+          "price": 1800
+        },
+        {
+          "name": "Roquefort y Nueces",
+          "description": "",
+          "price": 2000
+        },
+        {
+          "name": "Cuatro Quesos",
+          "description": "",
+          "price": 2000
+        },
+        {
+          "name": "Jamón Crudo y Mozza",
+          "description": "",
+          "price": 2000
+        },
+        {
+          "name": "Árabe",
+          "description": "",
+          "price": 2000
+        },
+        {
+          "name": "Carne a Cuchillo",
+          "description": "",
+          "price": 2200
+        },
+        {
+          "name": "Panceta",
+          "description": "",
+          "price": 2000
+        }
+      ]
+    },
+    {
+      "id": "sandwiches",
+      "name": "Sándwiches",
+      "kind": "cocina",
+      "note": "Versión XXL: +50%. Consultá las opciones disponibles.",
+      "items": [
+        {
+          "name": "Loro Negro",
+          "description": "Milanesa de ternera, lechuga, tomate, huevo, jamón y queso. Con papas fritas.",
+          "price": 15000
+        },
+        {
+          "name": "Guatembú Blanco",
+          "description": "Milanesa de pollo, lechuga, tomate, huevo, jamón y queso. Con papas fritas.",
+          "price": 13000
+        },
+        {
+          "name": "Angelim Rojo",
+          "description": "Nalga cortada a cuchillo, panceta, cebolla caramelizada, cherrys caramelizados, queso gratinado y rúcula. Con papas fritas.",
+          "price": 16000
+        },
+        {
+          "name": "Los Troncos",
+          "description": "Bife de lomo, panceta, cheddar, rúcula y tomate. Con papas fritas.",
+          "price": 16000
+        },
+        {
+          "name": "Ibirá",
+          "description": "Pan árabe, carne desmechada al vino tinto, cebolla y morrones salteados, salsa de ajo y lechuga o rúcula. Con papas fritas.",
+          "price": 15000,
+          "photo": "sandwich"
+        },
+        {
+          "name": "Guayubira",
+          "description": "Pan árabe, jamón crudo, queso crema, rúcula y tomates secos hidratados en oliva. Con papas fritas.",
+          "price": 13000
+        },
+        {
+          "name": "Mediterráneo",
+          "description": "Pan árabe, pechuga desmenuzada, queso crema, crocante de panceta, aceitunas y lechuga o rúcula. Con papas fritas.",
+          "price": 13000
+        },
+        {
+          "name": "Tostado",
+          "description": "Pan de miga, jamón y queso.",
+          "price": 8000
+        },
+        {
+          "name": "Tostado gratinado",
+          "description": "Pan de miga, jamón y queso, con cobertura de queso gratinado.",
+          "price": 10000
+        },
+        {
+          "name": "Veggie Los Troncos",
+          "description": "Medallón veggie, queso tybo, lechuga, tomate y alioli.",
+          "price": 8500
+        }
+      ]
+    },
+    {
+      "id": "hamburguesas",
+      "name": "Hamburguesas",
+      "kind": "cocina",
+      "note": "",
+      "items": [
+        {
+          "name": "Lapacho Negro",
+          "description": "Carne, jamón y queso, lechuga, tomate y huevo frito. Con papas fritas.",
+          "price": 9500
+        },
+        {
+          "name": "Cedro Misionero",
+          "description": "Carne, jamón y queso, panceta, lechuga, cherrys caramelizados y huevo frito. Con papas fritas.",
+          "price": 10500
+        },
+        {
+          "name": "Araucaria",
+          "description": "Doble carne, jamón y queso, lechuga, cherrys caramelizados y huevo frito. Con papas fritas.",
+          "price": 11500
+        },
+        {
+          "name": "Cancharana",
+          "description": "Carne, jamón y queso, lechuga, tomate, huevo frito y mayonesa con choclo. Con papas fritas.",
+          "price": 11000
+        },
+        {
+          "name": "María Preta",
+          "description": "Carne, jamón, provolone, tomate, cebolla caramelizada, rúcula y huevo frito. Con papas fritas.",
+          "price": 12000
+        },
+        {
+          "name": "Laurel Negro",
+          "description": "Doble carne, panceta, roquefort, lechuga, tomate y huevo frito. Con papas fritas.",
+          "price": 12000
+        },
+        {
+          "name": "Tacuarembó",
+          "description": "Doble carne, cebolla caramelizada, cheddar y panceta. Con papas fritas.",
+          "price": 13000,
+          "photo": "hamburguesa"
+        },
+        {
+          "name": "Chicken Burger",
+          "description": "Pechuga crispy o grillada, cheddar, lechuga, tomate y mayonesa de ajo.",
+          "price": 10500
+        },
+        {
+          "name": "Kid Burger",
+          "description": "Carne, jamón y queso. Con papas fritas.",
+          "price": 8000
+        }
+      ]
+    },
+    {
+      "id": "combos",
+      "name": "Combos",
+      "kind": "cocina",
+      "note": "Hamburguesas Lapacho Negro, papas fritas Los Troncos y baño de cheddar.",
+      "items": [
+        {
+          "name": "Combo ONE: 2 hamburguesas",
+          "description": "",
+          "price": 25000
+        },
+        {
+          "name": "Combo TWO: 3 hamburguesas",
+          "description": "",
+          "price": 34000
+        }
+      ]
+    },
+    {
+      "id": "pizzas",
+      "name": "Pizzas",
+      "kind": "cocina",
+      "note": "",
+      "items": [
+        {
+          "name": "Timbó",
+          "description": "Mozzarella, salsa de tomate, aceitunas, orégano",
+          "price": 14000
+        },
+        {
+          "name": "Palo Rosa",
+          "description": "Mozzarella, salsa de tomate, jamón, cherrys, albahaca, aceitunas",
+          "price": 16000,
+          "photo": "pizza"
+        },
+        {
+          "name": "Palmito",
+          "description": "Mozzarella, salsa de tomate, palmitos, huevo duro",
+          "price": 16000
+        },
+        {
+          "name": "Caña Fístola",
+          "description": "Mozzarella, salsa de tomate, roquefort, nueces",
+          "price": 19000
+        },
+        {
+          "name": "Anchico",
+          "description": "Mozzarella, cebolla caramelizada, rúcula, jamón crudo",
+          "price": 18000
+        },
+        {
+          "name": "4 Quesos",
+          "description": "Mozzarella, roquefort, provolone, sardo, salsa de tomate",
+          "price": 18000
+        },
+        {
+          "name": "Petiribí",
+          "description": "Mozzarella, salsa de tomate, calabresa, morrones asados",
+          "price": 16000
+        },
+        {
+          "name": "Mora Blanca",
+          "description": "Mozzarella, cebolla, aceite de oliva",
+          "price": 15000
+        },
+        {
+          "name": "Incienso",
+          "description": "Mozzarella, salsa de tomate, huevo duro, choclo, aceitunas",
+          "price": 14000
+        },
+        {
+          "name": "Ananá",
+          "description": "Mozzarella, salsa de tomate, jamón crudo, ananá, cerezas",
+          "price": 18000
+        },
+        {
+          "name": "Pindó",
+          "description": "Mozzarella, salsa de tomate, bondiola, tomate, aceitunas, aceite de ajo",
+          "price": 16000
+        },
+        {
+          "name": "Kurupí",
+          "description": "Mozzarella, salsa de tomate, carne de ternera picada, cebolla caramelizada",
+          "price": 20000
+        },
+        {
+          "name": "Urunday",
+          "description": "Mozzarella, salsa de tomate, roquefort, peras",
+          "price": 18000
+        },
+        {
+          "name": "Araticú",
+          "description": "Mozzarella, provolone, jamón, morrones asados, cebolla, oliva, orégano",
+          "price": 22000
+        },
+        {
+          "name": "Champiñones",
+          "description": "Mozzarella, salsa de tomate, champiñones, ajo",
+          "price": 19000
+        },
+        {
+          "name": "Carandaí",
+          "description": "Mozzarella, salsa de tomate, jamón, morrones asados, aceitunas",
+          "price": 15000
+        },
+        {
+          "name": "Los Troncos",
+          "description": "Mozzarella, salsa de tomate, cheddar, panceta",
+          "price": 19000
+        },
+        {
+          "name": "Hambur Pizza",
+          "description": "Mozzarella, salsa de tomate, medallón de carne, tomate, huevo frito",
+          "price": 27000
+        }
+      ]
+    },
+    {
+      "id": "milanesas",
+      "name": "Milanesas",
+      "kind": "cocina",
+      "note": "Sin guarnición. Versión XXL: +50%.",
+      "items": [
+        {
+          "name": "De Ternera",
+          "description": "Carne de ternera.",
+          "price": 14000
+        },
+        {
+          "name": "A Caballo",
+          "description": "Carne de ternera y huevo frito.",
+          "price": 15000
+        },
+        {
+          "name": "Napolitana",
+          "description": "Carne de ternera, salsa de tomate, jamón y queso.",
+          "price": 16500
+        },
+        {
+          "name": "A la Suiza",
+          "description": "Carne de ternera, salsa blanca y queso gratinado.",
+          "price": 17000
+        },
+        {
+          "name": "Agridulce",
+          "description": "Carne de ternera, cebolla caramelizada, queso azul, pera grillada y miel.",
+          "price": 17000
+        },
+        {
+          "name": "Marinera",
+          "description": "Carne de ternera rebozada en mix casero.",
+          "price": 16000
+        },
+        {
+          "name": "Los Troncos",
+          "description": "Carne de ternera, mozzarella, cheddar, panceta y huevo frito.",
+          "price": 17000
+        }
+      ]
+    },
+    {
+      "id": "carnes",
+      "name": "Carnes",
+      "kind": "cocina",
+      "note": "Sin guarnición.",
+      "items": [
+        {
+          "name": "Lomo al Champiñón",
+          "description": "Medallón de lomo, champiñones en salsa de crema y vino blanco.",
+          "price": 18000
+        },
+        {
+          "name": "Lomo a la Mostaza",
+          "description": "Medallón de lomo, salsa de crema con mostaza y pimienta.",
+          "price": 18000
+        },
+        {
+          "name": "Lomo a la Pimienta",
+          "description": "Medallón de lomo, salsa de crema con pimienta negra.",
+          "price": 18000
+        },
+        {
+          "name": "Lomo a la Plancha",
+          "description": "Medallón de lomo a la plancha.",
+          "price": 18000
+        },
+        {
+          "name": "Lomo a la Suiza",
+          "description": "Medallón de lomo, salsa blanca con crema y queso.",
+          "price": 18000
+        },
+        {
+          "name": "Bife de Chorizo",
+          "description": "Bife de chorizo a la plancha.",
+          "price": 18000
+        }
+      ]
+    },
+    {
+      "id": "pescado",
+      "name": "Milanesas de pescado",
+      "kind": "cocina",
+      "note": "Sin guarnición.",
+      "items": [
+        {
+          "name": "De Merluza",
+          "description": "Carne de merluza.",
+          "price": 11000
+        },
+        {
+          "name": "De Merluza Napolitana",
+          "description": "Merluza, salsa de tomates y mozzarella.",
+          "price": 13000
+        },
+        {
+          "name": "De Merluza al Roquefort",
+          "description": "Merluza, salsa de tomates, mozzarella y roquefort.",
+          "price": 14000
+        }
+      ]
+    },
+    {
+      "id": "guarniciones",
+      "name": "Guarniciones",
+      "kind": "cocina",
+      "note": "",
+      "items": [
+        {
+          "name": "Papas Fritas",
+          "description": "",
+          "price": 5000
+        },
+        {
+          "name": "Mandioca Frita",
+          "description": "",
+          "price": 5000
+        },
+        {
+          "name": "Puré de Papa",
+          "description": "",
+          "price": 5000
+        },
+        {
+          "name": "Puré Mixto",
+          "description": "",
+          "price": 5000
+        },
+        {
+          "name": "Ensalada Mixta",
+          "description": "",
+          "price": 5000
+        }
+      ]
+    },
+    {
+      "id": "pastas",
+      "name": "Pastas",
+      "kind": "cocina",
+      "note": "Salsas: Bolognesa, Bechamel, 4 Quesos y Roja. Consultá sus condiciones en el local.",
+      "items": [
+        {
+          "name": "Tallarines",
+          "description": "",
+          "price": 12000
+        },
+        {
+          "name": "Sorrentinos",
+          "description": "Jamón y queso.",
+          "price": 16000
+        },
+        {
+          "name": "Ravioles",
+          "description": "",
+          "price": 15000
+        },
+        {
+          "name": "Ñoquis de Papa",
+          "description": "",
+          "price": 15000
+        },
+        {
+          "name": "Pastel de Papa",
+          "description": "",
+          "price": 16000
+        },
+        {
+          "name": "Canelones",
+          "description": "Carne, verdura y choclo.",
+          "price": 16000
+        }
+      ]
+    },
+    {
+      "id": "postres",
+      "name": "Postres",
+      "kind": "cocina",
+      "note": "",
+      "items": [
+        {
+          "name": "Flan Casero",
+          "description": "",
+          "price": 5500
+        },
+        {
+          "name": "Mamón en Almíbar",
+          "description": "",
+          "price": 5500
+        },
+        {
+          "name": "Helado Arcor",
+          "description": "",
+          "price": null
+        },
+        {
+          "name": "Panqueque de ddl",
+          "description": "",
+          "price": 5500
+        },
+        {
+          "name": "Crumble de manzana",
+          "description": "",
+          "price": 7000
+        }
+      ]
+    },
+    {
+      "id": "sin-alcohol",
+      "name": "Sin alcohol",
+      "kind": "bebidas",
+      "note": "",
+      "items": [
+        {
+          "name": "Coca-Cola / Sprite / Fanta / Pepsi, 1,5 L",
+          "description": "",
+          "price": 7000
+        },
+        {
+          "name": "Gaseosa, 1 L",
+          "description": "",
+          "price": 5000
+        },
+        {
+          "name": "Gaseosa, 500 ml",
+          "description": "",
+          "price": 3000
+        },
+        {
+          "name": "Agua Mineral, 1,5 L",
+          "description": "",
+          "price": 3500
+        },
+        {
+          "name": "Agua Mineral, 500 ml",
+          "description": "",
+          "price": 2000
+        },
+        {
+          "name": "Agua Saborizada, 1,5 L",
+          "description": "",
+          "price": 3500
+        },
+        {
+          "name": "Limonada",
+          "description": "",
+          "price": 7000
+        },
+        {
+          "name": "Limonada con menta y jengibre",
+          "description": "",
+          "price": 7000
+        }
+      ]
+    },
+    {
+      "id": "cervezas",
+      "name": "Cervezas",
+      "kind": "bebidas",
+      "note": "",
+      "items": [
+        {
+          "name": "Stella Artois",
+          "description": "",
+          "price": 7500
+        },
+        {
+          "name": "Patagonia",
+          "description": "",
+          "price": 7000
+        },
+        {
+          "name": "Brahma",
+          "description": "",
+          "price": 6000
+        },
+        {
+          "name": "Quilmes Original",
+          "description": "",
+          "price": 6000
+        },
+        {
+          "name": "Quilmes Stout",
+          "description": "",
+          "price": null
+        },
+        {
+          "name": "Budweiser",
+          "description": "",
+          "price": 6000
+        },
+        {
+          "name": "Corona, 710 ml",
+          "description": "",
+          "price": 7000
+        },
+        {
+          "name": "Corona, 473 ml",
+          "description": "",
+          "price": 4500
+        },
+        {
+          "name": "Corona, 330 ml",
+          "description": "",
+          "price": 4500
+        },
+        {
+          "name": "Patagonia lata, Bohemian Pilsener",
+          "description": "",
+          "price": 4500
+        },
+        {
+          "name": "Patagonia lata, Amber Lager",
+          "description": "",
+          "price": 4500
+        },
+        {
+          "name": "Patagonia lata, 24.7",
+          "description": "",
+          "price": 4500
+        },
+        {
+          "name": "Stella Artois lata, 473 ml",
+          "description": "",
+          "price": 4500
+        },
+        {
+          "name": "Stella Artois lata, 330 ml",
+          "description": "",
+          "price": 4500
+        }
+      ]
+    },
+    {
+      "id": "tragos",
+      "name": "Tragos",
+      "kind": "bebidas",
+      "note": "",
+      "items": [
+        {
+          "name": "Aperol",
+          "description": "Aperol y jugo de naranja.",
+          "price": 7500
+        },
+        {
+          "name": "Fernet",
+          "description": "Fernet y Coca-Cola.",
+          "price": 7000
+        },
+        {
+          "name": "Fernet XL",
+          "description": "Fernet y Coca-Cola.",
+          "price": 11000
+        },
+        {
+          "name": "Gancia",
+          "description": "Gancia y Sprite.",
+          "price": 6000
+        },
+        {
+          "name": "Cuba Libre",
+          "description": "Ron Bacardi, Coca-Cola y limón.",
+          "price": 8000
+        },
+        {
+          "name": "Gin Tonic",
+          "description": "Gin clásico o de limón y agua tónica.",
+          "price": 7000
+        },
+        {
+          "name": "Gin Tonic Frutos Rojos",
+          "description": "Gin de frutos rojos y agua tónica.",
+          "price": 8000
+        },
+        {
+          "name": "Gin Tonic de limón",
+          "description": "Gin de limón y agua tónica.",
+          "price": 7000
+        },
+        {
+          "name": "Campari",
+          "description": "Campari con jugo de naranja o agua tónica.",
+          "price": 7000
+        },
+        {
+          "name": "Vermut",
+          "description": "Cinzano Rosso y soda.",
+          "price": 6000
+        },
+        {
+          "name": "Caipiriña",
+          "description": "Velho Barreiro y jugo de limón.",
+          "price": 7000
+        },
+        {
+          "name": "Daikiri",
+          "description": "Vodka, leche condensada y fruta de estación.",
+          "price": 7000
+        }
+      ]
+    },
+    {
+      "id": "vinos",
+      "name": "Vinos",
+      "kind": "bebidas",
+      "note": "",
+      "items": [
+        {
+          "name": "DV Catena, Malbec - Malbec",
+          "description": "",
+          "price": 28000
+        },
+        {
+          "name": "DV Catena, Cabernet - Malbec",
+          "description": "",
+          "price": 20000
+        },
+        {
+          "name": "Angélica Zapata, Malbec Alta",
+          "description": "",
+          "price": 40000
+        },
+        {
+          "name": "El Enemigo, Malbec",
+          "description": "",
+          "price": null
+        },
+        {
+          "name": "Mosquita Muerta, Blend",
+          "description": "",
+          "price": null
+        },
+        {
+          "name": "Latitud 33, Malbec",
+          "description": "",
+          "price": 11000
+        },
+        {
+          "name": "Santa Julia, Malbec",
+          "description": "",
+          "price": 9000
+        },
+        {
+          "name": "Santa Julia, Dulce Tinto Natural",
+          "description": "",
+          "price": 11000
+        },
+        {
+          "name": "Santa Julia, Blanco Chenin Dulce Natural",
+          "description": "",
+          "price": 11000
+        },
+        {
+          "name": "Trumpeter, Malbec",
+          "description": "",
+          "price": 13000
+        },
+        {
+          "name": "Cuatro monos locos, Malbec salvaje",
+          "description": "",
+          "price": 11000
+        },
+        {
+          "name": "Alambrado, Malbec",
+          "description": "",
+          "price": 12000
+        }
+      ]
+    }
+  ]
+}

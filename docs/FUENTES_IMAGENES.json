@@ -1,0 +1,88 @@
+[
+  {
+    "asset": "fachada",
+    "source": "imagenes/ambiente-7.jpeg",
+    "original_size": [
+      1600,
+      1200
+    ],
+    "origin": "Aportado por el usuario. Optimización y escalado, sin generación de contenido."
+  },
+  {
+    "asset": "interior",
+    "source": "imagenes/ambiente-interior.jpg",
+    "original_size": [
+      1280,
+      960
+    ],
+    "origin": "Aportado por el usuario. Optimización y escalado, sin generación de contenido."
+  },
+  {
+    "asset": "mesa",
+    "source": "imagenes/ambiente-01.jpg",
+    "original_size": [
+      960,
+      1280
+    ],
+    "origin": "Aportado por el usuario. Optimización y escalado, sin generación de contenido."
+  },
+  {
+    "asset": "terraza",
+    "source": "imagenes/ambiente-12.jpeg",
+    "original_size": [
+      1200,
+      1600
+    ],
+    "origin": "Aportado por el usuario. Optimización y escalado, sin generación de contenido."
+  },
+  {
+    "asset": "pizza",
+    "source": "imagenes/pizza-palorosa.jpg",
+    "original_size": [
+      960,
+      1280
+    ],
+    "origin": "Aportado por el usuario. Optimización y escalado, sin generación de contenido."
+  },
+  {
+    "asset": "hamburguesa",
+    "source": "imagenes/hamburguesa-tacuarembo.jpg",
+    "original_size": [
+      960,
+      1280
+    ],
+    "origin": "Aportado por el usuario. Optimización y escalado, sin generación de contenido."
+  },
+  {
+    "asset": "sandwich",
+    "source": "imagenes/sandwich-ibira.jpg",
+    "original_size": [
+      1200,
+      1600
+    ],
+    "origin": "Aportado por el usuario. Optimización y escalado, sin generación de contenido."
+  },
+  {
+    "asset": "milanesa",
+    "source": "imagenes/milanesa-los-troncos.jpg",
+    "original_size": [
+      1280,
+      960
+    ],
+    "origin": "Aportado por el usuario. Optimización y escalado, sin generación de contenido."
+  },
+  {
+    "asset": "tragos",
+    "source": "imagenes/tragos-1.jpeg",
+    "original_size": [
+      900,
+      1600
+    ],
+    "origin": "Aportado por el usuario. Optimización y escalado, sin generación de contenido."
+  },
+  {
+    "asset": "logo.webp",
+    "source": "imagenes/LOGO_LOS_TRONCOS.jpg",
+    "origin": "Recorte del margen exterior y reducción; no se recoloreó la marca."
+  }
+]

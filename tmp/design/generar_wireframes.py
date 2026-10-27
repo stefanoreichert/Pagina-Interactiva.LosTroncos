@@ -89,7 +89,7 @@ def label(im,w,title,sub):
 def desktop():
     im=Image.new('RGB',(1440,4850),BG)
     label(im,1440,'Los Troncos · Wireframe de escritorio · 1440 px','Estructura provisional · Estado de carta: Cocina / Pizzas · Fuentes de esquema, no tipografía final')
-    logo(im,32,96,160)
+    logo(im,32,96,124)
     for x,t in [(860,'Carta'),(980,'El lugar'),(1115,'Ambiente'),(1260,'Visitanos')]:txt(im,x,115,t,19)
     rect(im,(0,176,1440,536),GREEN)
     txt(im,48,200,'Los Troncos',124,BG,serif=True)
@@ -147,7 +147,7 @@ def desktop():
 def mobile():
     im=Image.new('RGB',(390,7500),BG)
     label(im,390,'Los Troncos · Móvil · 390 px','Estado: Cocina / Pizzas · Esquema provisional')
-    logo(im,20,97,118);txt(im,283,109,'Secciones',16)
+    logo(im,20,92,94);txt(im,283,109,'Secciones',16)
     rect(im,(0,156,390,477),GREEN)
     txt(im,20,185,'Los Troncos',52,BG,serif=True)
     txt(im,20,271,'Resto bar en\nPuerto Rico, Misiones.',20,BG)
@@ -166,7 +166,8 @@ def mobile():
     txt(im,34,y+14,'Nombre o ingrediente',16,MUTED);y+=80
     txt(im,20,y,'Categoría',16,bold=True);y+=31
     rect(im,(20,y,370,y+52),SOFT,outline=MUTED,radius=4)
-    txt(im,34,y+12,'Pizzas',18,bold=True);txt(im,335,y+12,'⌄',18);y+=90
+    txt(im,34,y+12,'Pizzas',18,bold=True)
+    ImageDraw.Draw(im).line([(338,y+22),(343,y+27),(348,y+22)],fill=INK,width=2);y+=90
     txt(im,20,y,'Pizzas',30,serif=True);txt(im,270,y+9,'18 opciones',15,MUTED);y+=70
     for data in PIZZAS:y=dish(im,20,y,350,data,True)
     y=txt(im,20,y+8,'Importes del PDF. Vigencia y moneda por confirmar antes de publicar.',14,MUTED,width=350)+100
