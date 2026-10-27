@@ -1,0 +1,40 @@
+---
+import Foto from './Foto.astro';
+import Icono from './Icono.astro';
+import carta from '../data/carta.json';
+import local from '../data/local.json';
+const selections=[{name:'Palo Rosa',group:'pizzas',photo:'pizza',alt:'Pizza Palo Rosa con jamón, mozzarella, tomates cherry y aceitunas.',width:960,height:1280},{name:'Tacuarembó',group:'hamburguesas',photo:'hamburguesa',alt:'Hamburguesa Tacuarembó con cheddar, panceta y papas fritas.',width:960,height:1280},{name:'Ibirá',group:'sandwiches',photo:'sandwich',alt:'Sándwich Ibirá en pan árabe con carne desmechada y papas.',width:1200,height:1600},{name:'Los Troncos',group:'milanesas',photo:'milanesa',alt:'Milanesa Los Troncos con mozzarella, cheddar, panceta y huevo frito.',width:1280,height:960}].map(selection=>{const group=carta.groups.find(entry=>entry.id===selection.group);return {...selection,category:group?.name||selection.group,item:group?.items.find(item=>item.name===selection.name)}});
+const price=(value:number|null|undefined)=>value==null?'Consultar':`$${new Intl.NumberFormat('es-AR').format(value)}`;
+---
+<section class="hero frame" id="inicio" aria-labelledby="hero-title">
+  <div class="hero-copy">
+    <h1 id="hero-title">Los <span>Troncos</span></h1>
+    <p class="hero-intro">Resto bar en Puerto Rico, Misiones.<br />Una mesa para todos tus gustos.</p>
+    <div class="hero-actions"><a href="#carta" class="button button-cream">Ver la carta <Icono /></a><a href={local.whatsapp} class="button button-outline" aria-label="Reservar por WhatsApp" target="_blank" rel="noopener noreferrer">Reservar</a></div>
+    <div class="hero-practical"><p>{local.hoursDays}<br /><span>19:00 a 01:30 del día siguiente</span></p><a href="#ubicacion">{local.address}<Icono name="up-right" size={17}/></a></div>
+  </div>
+  <div class="hero-food" role="region" aria-roledescription="carrusel" aria-label="Platos de Los Troncos" tabindex="0" id="food-carousel">
+    <div class="hero-food-stage" aria-label="Arrastrá los platos para girar">
+      <div class="hero-food-orbit">
+        {selections.map((selection,index)=><a
+          class="hero-plate"
+          href={`#grupo-${selection.group}`}
+          data-slide-to={index}
+          data-position={index===0?'current':index===1?'next':index===selections.length-1?'previous':'far'}
+          data-dish-name={selection.name}
+          data-dish-category={selection.category}
+          data-dish-price={price(selection.item?.price)}
+          aria-label={`Mostrar ${selection.name}`}
+          aria-current={index===0?'true':undefined}
+          draggable="false"
+        >
+          <Foto name={selection.photo} alt={selection.alt} width={selection.width} height={selection.height} eager={index===0} sizes="(max-width:767px) 90vw, 47vw" />
+        </a>)}
+        <span class="hero-drag-indicator" aria-hidden="true">Drag</span>
+      </div>
+    </div>
+    <div class="hero-current"><div><h2 id="active-dish-name">{selections[0].name}</h2><p class="hero-current-category" id="active-dish-category">{selections[0].category}</p><a href={`#grupo-${selections[0].group}`} data-menu-link={selections[0].group} id="active-dish-link">Ver en la carta</a></div><span id="active-dish-price">{price(selections[0].item?.price)}</span></div>
+    <div class="carousel-controls" hidden><span class="carousel-counter" id="carousel-counter" aria-hidden="true">01 / 04</span><div class="carousel-arrows"><button type="button" data-slide-step="-1" aria-label="Plato anterior"><Icono name="left"/></button><button type="button" data-slide-step="1" aria-label="Plato siguiente"><Icono name="right"/></button></div></div>
+    <p class="visually-hidden" aria-live="polite" id="carousel-status"></p>
+  </div>
+</section>

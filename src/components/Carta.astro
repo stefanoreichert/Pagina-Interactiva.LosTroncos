@@ -1,0 +1,50 @@
+---
+import carta from '../data/carta.json';
+import Foto from './Foto.astro';
+const money=(price:number|null)=>price===null?'Consultar':`$${new Intl.NumberFormat('es-AR').format(price)}`;
+const normalize=(s:string)=>s.normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLocaleLowerCase('es');
+const featuredMilanesa=carta.groups.find(group=>group.id==='milanesas')?.items.find(item=>item.name==='Los Troncos');
+---
+      <section class="menu-section section-space" id="carta" aria-labelledby="menu-title">
+        <div class="frame">
+          <div class="menu-heading"><h2 id="menu-title">La carta</h2><p>Pizzas, cocina y algo para brindar.<br />Elegí por dónde empezar.</p></div>
+          <div class="menu-tools" id="menu-tools" hidden>
+            <div class="menu-kind" role="group" aria-label="Tipo de carta">
+              <button type="button" data-kind="cocina" aria-pressed="true" aria-controls="menu-results">Cocina</button>
+              <button type="button" data-kind="bebidas" aria-pressed="false" aria-controls="menu-results">Bebidas</button>
+            </div>
+            <form class="menu-search" role="search" id="menu-search" action="/">
+              <label for="search">Buscar en la carta</label>
+              <div class="search-field"><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="m16 16 5 5" stroke="currentColor" stroke-width="1.5" /></svg><input id="search" name="buscar" type="search" placeholder="Nombre o ingrediente…" autocomplete="off" maxlength="100" /><button type="button" id="clear-search" aria-label="Limpiar búsqueda" hidden><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18" stroke="currentColor" stroke-width="1.5"/></svg></button></div>
+            </form>
+          </div>
+          <div class="menu-category-bar">
+            <div class="mobile-category" hidden><label for="category">Categoría</label><select id="category" name="categoria"></select></div>
+            <nav class="category-links" aria-label="Elegir categoría">
+              <button type="button" class="all-category" data-category="todas" hidden>Toda la cocina</button>
+              {carta.groups.map(group => <a href={`#grupo-${group.id}`} data-category={group.id} data-kind={group.kind}>{group.name}</a>)}
+            </nav>
+          </div>
+          <div class="menu-layout">
+            <figure class="menu-feature">
+              <div class="menu-feature-photo"><Foto name="milanesa" alt="Milanesa Los Troncos con mozzarella, cheddar, panceta y huevo frito." width={1280} height={960} sizes="(max-width:899px) 90vw, 40vw" /></div>
+              <figcaption class="menu-feature-caption"><span>{featuredMilanesa?.name}</span><strong>{money(featuredMilanesa?.price ?? null)}</strong></figcaption>
+            </figure>
+            <div class="menu-results" id="menu-results">
+              <button type="button" class="text-link reset-menu" id="reset-menu" hidden>Ver toda la carta</button>
+              <p class="result-status visually-hidden" id="result-status" aria-live="polite" aria-atomic="true" hidden></p>
+              {carta.groups.map(group => <section class="menu-group" id={`grupo-${group.id}`} data-group={group.id} data-kind={group.kind} aria-labelledby={`title-${group.id}`}>
+                <div class="group-heading"><h3 id={`title-${group.id}`}>{group.name}</h3><p class="group-count" aria-hidden="true">{group.items.length} opciones</p></div>
+                {group.note && <p class="group-note">{group.note}</p>}
+                <ul class="dish-list">{group.items.map(item => <li class="dish" data-search={normalize(`${item.name} ${item.description}`)}>
+                  <div class="dish-heading"><h4>{item.name}</h4><span class:list={['dish-price',{'price-consult':item.price===null}]}>{money(item.price)}</span></div>
+                  {item.description && <p>{item.description}</p>}
+                </li>)}</ul>
+              </section>)}
+              <div class="empty-state" id="empty-state" hidden><h3>Sin coincidencias</h3><p>Probá otro nombre o ingrediente, o buscá en toda la carta.</p><div class="empty-actions"><button class="button" id="empty-clear" type="button">Limpiar búsqueda</button><button class="text-link" id="search-all" type="button">Buscar en toda la carta</button></div></div>
+              <p class="menu-footnote">Precios sujetos a actualización. Las opciones sin importe se consultan en el local.</p>
+            </div>
+          </div>
+          <p class="menu-help">Los platos y bebidas se preparan según disponibilidad. Consultanos en el local.</p>
+        </div>
+      </section>

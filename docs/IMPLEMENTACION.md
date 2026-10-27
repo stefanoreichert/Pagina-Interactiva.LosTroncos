@@ -1,5 +1,7 @@
 # Alcance de implementación
 
+> Contrato histórico del primer diseño. La dirección visual y la exclusión de reservas que siguen debajo fueron sustituidas por el nuevo pedido: `docs/REDISENO_TONDO.md` es el contrato vigente. WhatsApp +54 9 3743 611895 confirmado; consultas de reserva incluidas, sin motor de disponibilidad.
+
 El 27 de octubre de 2026 el usuario autorizó continuar el proyecto hasta finalizarlo. Esta autorización sustituye la restricción anterior de limitar el trabajo a planificación. Se conserva la dirección aprobada; no se incorpora un flujo de reservas ni se asume un proveedor de publicación.
 
 ## Direction contract
@@ -12,7 +14,7 @@ STORY: reconocer el resto bar de Puerto Rico, descubrir su cocina, consultar la 
 
 FIRST VIEWPORT: cabecera clara con logo y navegación, nombre grande sobre campo bosque, descriptor y acción Ver la carta, fotografía ancha de fachada entrando en el primer encuadre. Móvil reorganiza nombre, acción y recorte fotográfico, con navegación expandible accesible.
 
-FORM: desarrollo desde la dirección y los wireframes de estructura; no hay un comp pictórico aprobado como contrato de píxeles. Semilla de composición registrada en la investigación: 487768883; el cargador Impeccable no está disponible. La fotografía se asienta una sola vez, con alternativa sin movimiento.
+FORM: desarrollo desde la dirección y los wireframes de estructura; no hay un comp pictórico aprobado como contrato de píxeles. `seed: none (unavailable)`: el motor Impeccable no está instalado; la dirección ya fue aprobada por el usuario y no se simuló un roll de ese motor. La semilla decimal 487768883 corresponde únicamente a la investigación de la otra skill, design-taste-frontend. La fotografía se asienta una sola vez, con alternativa sin movimiento.
 
 FINISH: unreviewed and undocumented is unfinished; this build ends with the finish review, the verdict, DESIGN.md, and every shipping raster carrying its provenance.
 

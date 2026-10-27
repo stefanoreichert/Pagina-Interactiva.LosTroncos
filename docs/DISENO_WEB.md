@@ -1,12 +1,16 @@
 # Los Troncos Resto Bar · Plan de diseño web
 
-Fecha: 27 de octubre de 2026. Versión: 0.3. Estado: propuesta provisional para revisión, previa a implementación.
+> Historial de planificación de la dirección Roma/verde. El pedido posterior de rediseño integral la reemplaza: ver `docs/REDISENO_TONDO.md` y `DESIGN.md` para las decisiones vigentes. Las reservas por WhatsApp ahora están incluidas y el número +54 9 3743 611895 fue confirmado por el usuario. Los datos comerciales pendientes se conservan.
+
+Fecha: 27 de octubre de 2026. Versión: 0.4. Estado: planificación llevada a implementación local, con confirmaciones comerciales pendientes.
+
+Este documento conserva el razonamiento y las decisiones provisionales del diseño. El usuario autorizó posteriormente completar la web y luego retomar su revisión. El sistema efectivo se registra en `DESIGN.md`; la estructura y las diferencias respecto del esquema, en `docs/WIREFRAMES.md`; la revisión de entrega, en `docs/REVISION_DISENO.md`.
 
 ## 1. Alcance y decisiones de partida
 
-El proyecto se desarrollará desde cero. No hay una página anterior que comparar ni una aplicación implementada. Se recibieron materiales de marca, fotografías y una carta en el Drive compartido; la carpeta local `imagenes` mencionada por el usuario no aparece en el checkout revisado. El inventario y sus límites se registran en la sección 8.4.
+El proyecto se creó desde cero, sin una página anterior que comparar. Ya existe una implementación Astro. Se recibieron materiales de marca, fotografías y carta en Drive y en la carpeta local `imagenes`, disponible tras la revisión inicial. La selección efectiva se documenta en `docs/SELECCION_FOTOGRAFICA.md`.
 
-**Confirmado por el usuario:** nombre Los Troncos Resto Bar; experiencia premium, moderna y responsive; identidad gastronómica propia; Roma como inspiración sin copia literal; verde bosque como base provisional. Esta etapa produce planificación, sin implementar la página ni instalar dependencias.
+**Confirmado por el usuario:** nombre Los Troncos Resto Bar; experiencia premium, moderna y responsive; identidad gastronómica propia; Roma como inspiración sin copia literal; verde bosque como base provisional. La restricción inicial de no implementar fue sustituida por la autorización expresa para continuar y finalizar el proyecto. Reservas siguen pospuestas.
 
 **Propuesto para validar:** un sitio gastronómico centrado en descubrir el lugar, consultar la carta y organizar una visita. Público supuesto: personas que evalúan dónde comer o reunirse, frecuentemente desde el teléfono. La especialidad, el tipo de servicio y el posicionamiento comercial siguen pendientes.
 
@@ -305,7 +309,7 @@ El listado contiene archivos cuyo nombre empieza por `ChatGPT Image`; se tratar�
 
 **Mantenimiento confirmado:** el propio usuario actualizará la carta. Falta acordar si prefiere editar archivos estructurados o una interfaz de administración; no se presupone experiencia técnica ni necesidad de CMS por ese único dato.
 
-**Siguiente trabajo de planificación:** cotejar visualmente la carta para extraer su estructura fiel, seleccionar fotografías reales y adaptar los wireframes al logo y a los nombres de árboles presentes en la oferta. No se implementa la página ni se desarrolla el flujo de reservas.
+**Avance posterior:** se cotejaron visualmente las ocho páginas de la carta, se seleccionaron fotografías propias, se prepararon los wireframes y se implementó la web. `docs/CARTA_REVISADA.md` conserva importes y pendientes; `src/data/carta.json` es ahora la fuente editable del catálogo. El flujo de reservas permanece fuera de alcance.
 
 ## 9. Arquitectura frontend recomendada
 
@@ -378,10 +382,10 @@ La carta prerenderizada no necesita spinner de red. Los estados de carga y reint
 | Antes de programar | Aprobación del sistema, estructura, flujos y stack | Establecer alcance definitivo de la primera versión |
 | Antes de publicar | Datos completos, dominio, horarios, precios y enlaces | Validación comercial y operativa |
 
-Próximo entregable de diseño: wireframes de escritorio y móvil con contenido representativo, después una composición de portada y carta con fotos propias. Revisar legibilidad y jerarquía antes de preparar el desarrollo. No iniciar implementación hasta que el usuario dé por cerradas la planificación y las decisiones funcionales necesarias.
+Los wireframes y la implementación ya se prepararon tras la autorización del usuario. El siguiente hito externo es revisar los datos comerciales pendientes y elegir dominio/hosting antes de publicar. No se añadieron reservas ni se tomó un compromiso con un proveedor.
 
 ## 12. Estado de este documento
 
 Se preparó una propuesta escrita y se calcularon los contrastes de las combinaciones base. Se consultaron las ocho skills, la ficha y demo de Roma y documentación primaria de las tecnologías recomendadas. Las diferencias frente a recomendaciones automáticas se explicitan arriba.
 
-No existe aún una maqueta renderizada ni una implementación sobre la que afirmar rendimiento, accesibilidad o validación responsive. Las medidas, presupuestos y comportamientos de este documento son requisitos para esa fase. Este archivo es la referencia provisional de planificación; no constituye un sistema implementado ni reemplaza decisiones pendientes del negocio.
+Existe una implementación local y evidencia de revisión en navegador; las medidas y presupuestos iniciales se deben contrastar con esa evidencia, sin convertir objetivos en resultados. No se afirma auditoría WCAG completa ni métricas reales de usuarios. Las confirmaciones comerciales pendientes continúan en `docs/CARTA_REVISADA.md` y no se sustituyen por decisiones de diseño.

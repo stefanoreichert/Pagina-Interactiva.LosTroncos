@@ -6,4 +6,6 @@ dist/
 !.env.example
 tmp/
 .taste-skill/inspect/
+.taste-skill/inspect-*/
+.taste-skill/tondo-*/
 .impeccable/review/
